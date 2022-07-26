@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+header{
+    background-color: black;
+    z-index: 2;
+    padding: 3rem 0;
+    .all{
+    
+        justify-content: center;
+        align-items: center;
+        
+       
+        
+        .logo{
+           width: 30%;
+           padding: 2rem 0;
+           
+           a{
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            }
+           
+        }
+
+        nav{
+            text-align: right;
+            width: 70%;   
+            
+            a{
+                margin-left: 2rem;
+                font-size: 16px;
+                color: white;
+                font-weight: bold;
+                position: relative;
+                
+    
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background-color: #e9204f;
+                    height: 3px;
+                    width: 0px;
+                    bottom: -7px;
+                    left: 0;
+                    transition: .3s;
+                    
+                }
+                &:nth-child(1):after{
+                    content: "";
+                    position: absolute;
+                    background-color: #e9204f;
+                    height: 3px;
+                    width: 20px;
+                    bottom: -7px;
+                    left: 0;
+                    
+                    
+                }
+
+                &:not(:nth-child(1)):hover::after{
+                    width: 20px;
+                    
+                }
+
+
+
+            }  
+               
+
+            i{
+                margin-left: 2rem;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+                 
+        }
+        
+    }
+}
+                
+
+#first{
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-size: 640px auto;
+    background-position: 70% 0;
+    
+    
+
+    .all{
+
+        padding-top: 10rem;
+
+        h1{
+            font-size: 78px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 70px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: #e9204f;
+                height: 3px;
+                width: 70px;
+                left: 2px;
+                top: -25%;
+            }
+        }
+
+        a{
+            border: 2px solid #e9204f;
+            text-align: center;
+            padding: 20px 40px;
+            color: white;
+            width: 200px;
+            position: relative;
+            z-index: 1;
+            
+    
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: #e9204f;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                transition: transform .3s;
+                transform: scaleX(0);
+                transform-origin: 0 0;
+                z-index: -1;
+            }
+                
+            &:hover::before{
+                transform: scaleX(1);
+            }
+    
+        }
+    }
+
+    .first-all{
+        z-index: 1;
+        position: relative;
+        
+
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: #e9204f;
+            height: 60px;
+            width: 442px;
+            bottom: -18px;
+            right: -14px;
+            z-index: -1;
+            transition: .5s;
+        }
+
+        &:hover::after{
+            background-color: #b3183c;
+        }
+        
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: #e9204f;
+            height: 65px;
+            width: 4px;
+            bottom: -18px;
+            right: 50%;
+            z-index: -1;
+            transition: .5s;
+        }
+        &:hover::before{
+            background-color: #b3183c;
+        }
+
+        
+    }
+
+   .box-left{
+    background-color: #e9204f;
+    margin-top: 8rem;
+    padding: 60px 40px;
+    cursor: pointer;
+    transition: .5s;
+    
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 2rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 50px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+
+    p{
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+    }
+
+
+    i{
+        color: white;
+        font-size: 30px;
+        margin-bottom: 3rem;
+        transition: .5s;
+    }
+        
+        
+
+   
+   }
+
+   .box-right{
+    background-color: #1d1b1b;
+    margin-top: 8rem;
+    padding: 60px 30px;
+    cursor: pointer;
+    transition: .5s;
+    
+    
+   
+   
+  
+
+    &:hover{
+        background-color: #e9204f;
+
+    }
+
+    &:hover i{
+        color: #fff;
+        
+    }
+    
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 2rem;
+        position: relative;
+       
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 50px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+        }
+
+       
+    }
+    
+
+    p{
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+    }
+
+
+    i{
+        color: #e9204f;
+        font-size: 30px;
+        margin-bottom: 3rem;
+        transition: .5s;
+    }
+
+   }
+
+   
+   .box-middle{
+    background-color: #1d1b1b;
+    margin-top: 8rem;
+    padding: 60px 30px;
+    cursor: pointer;
+    transition: .5s;
+   
+
+    &:hover{
+        background-color: #e9204f;
+
+    }
+
+    &:hover i{
+        color: #fff;
+        
+    }
+    
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 2rem;
+        position: relative;
+       
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 50px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+        }
+
+       
+    }
+    
+
+    p{
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+    }
+
+
+    i{
+        color: #e9204f;
+        font-size: 30px;
+        margin-bottom: 3rem;
+        transition: .5s;
+    }
+
+   }
+    
+}
+
+       
+
+          
+       
+
+   
+            
+            
+        
+            
+            
+            
+       
+      
+
+        
+            
+            
+           
+
+
+    
+        
